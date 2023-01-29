@@ -1,6 +1,3 @@
-# Search-Engine-Search
+# Search-Engine-TF/IDF
 
-this is the logic for searching usual search and exact search
-exact search just offer that second word must come after first word is found
-
-i just put the logic without the database code or the MVC implementation 
+this part was a bonus essentialy gets the score of occurance for every word across all the documents 
