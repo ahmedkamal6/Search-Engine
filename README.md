@@ -1,4 +1,4 @@
-# Search-Engine-Crowler
+# Search-Engine-Indexer
 
 this is the logic for indexing each document we have their urls from crawler part by:
 1- fetching html using the url
