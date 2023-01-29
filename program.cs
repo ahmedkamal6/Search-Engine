@@ -15,12 +15,16 @@ using System.Net;
 
 namespace Crowler
 {
+    class Program
+    {    
+        static void Main(string[] args)
+        {
             Queue<string> URIs = new Queue<string>();
             Dictionary<string, bool> visited = new Dictionary<string, bool>();
-            URIs.Enqueue(URLtxt.Text);
+            URIs.Enqueue("https://www.wikipedia.com");
             int count = 0;
             string URI = "";
-            while (count < Int32.Parse(COUNTtxt.Text))
+            while (count < (3000))
             {
                 try
                 {                   
@@ -58,7 +62,7 @@ namespace Crowler
                             visited.Add(link, false);
                         }
                     }
-                    
+                    visited[URI] = true;
                     count++;
                 }
                 catch (Exception a)
@@ -67,5 +71,6 @@ namespace Crowler
                     continue;
                 }
             }
-
+        }
+    }
 }
